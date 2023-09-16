@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 
+        METODOS DE ENVIO
+        GET > publico (padrão)
+        POST > privado
+     -->
+    <form action="https://www.w3schools.com/action_page.php?" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nm_completo" disabled>
+            
+            <label for="dt_nascimento">Data de nascimento</label>
+            <input type="date" name="dt_nascimento">
+            <select name="nacionalidade">
+                <option value="br">Brasileiro</option>
+                <option value="ar" disabled>Argentino</option>
+                <option value="es">Espanhol</option>
+                <option value="it">Italiano</option>
+                <option value="fr">Francês</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados da conta</legend>
+            <label for="email">E-mail</label>
+            <input type="email" name="nm_email">
+            <label for="senha">Senha</label>
+            <input type="password" name="nm_senha">
+            
+            <h2>Qaul tipo de conta?</h2>
+            <input type="radio" id="pj" value="01pj" name="tp_conta">
+            <label for="pj">Pessoa jurídica</label>
+            <input type="radio" id="pf" value="02pf" name="tp_conta" checked>
+            <label for="pf">Pessoa física</label>
+            
+            
+            <h2>O que deseja fazer após 21h?</h2>
+            <input type="checkbox" id="fazer-pix" value="fazer-pix" name="oqfazer" checked>
+            <label for="fazer-pix">Fazer pix</label>
+            
+            <input type="checkbox" id="sonegar-imposto" value="sonegar-imposto" name="oqfazer">
+            <label for="sonegar-imposto">Sonegar imposto</label>
+            
+            <input type="checkbox" id="pagar-boleto" value="pagar-boleto" name="oqfazer" checked>
+            <label for="pagar-boleto">Pagar boleto</label>
+
+            <input type="checkbox" id="clonar-cartao" value="clonar-cartao" name="oqfazer">
+            <label for="clonar-cartao">Clonar cartão</label>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

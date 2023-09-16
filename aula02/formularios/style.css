@@ -1,0 +1,12 @@
+input:not([type="radio"]):not([type="checkbox"]) {
+    width: 100%;
+}
+
+/* input[type="radio"] {
+    width: initial;
+} */
+
+
+fieldset {
+    margin-bottom: 10px;
+}
