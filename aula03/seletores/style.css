@@ -1,0 +1,56 @@
+/* seletor por tag */
+p, button {
+    color: purple;
+}
+
+/* seletor por id */
+#paragrafo-3 {
+    color: peru;
+}
+
+/* seletor de classe */
+.pares {
+    color: seagreen;
+}
+
+.btn {
+    border: none;
+}
+
+.bg-red {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+
+.btn.bg-red {
+    border: 1px solid yellowgreen;
+    background-color: red;
+    color: white;
+}
+
+#especial.selecionada {
+    background-color: coral;
+}
+
+.selecionada {
+    background-color: lightgreen;
+}
+
+#especial:hover, .selecionada:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.desabilitada {
+    background-color: silver;
+}
+
+
+.habilitada {
+    background-color: lightskyblue;
+}
+.habilitada:hover {
+    background-color: darkblue;
+    cursor: pointer;
+}
+

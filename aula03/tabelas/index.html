@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <table border="1"> -->
+    <table>
+      <caption>
+        Vendas trimestrais
+      </caption>
+
+      <thead>
+        <tr>
+          <th colspan="2">Mês</th>
+          <th>Janeiro</th>
+          <th>Fevereiro</th>
+          <th>Março</th>
+          <th rowspan="2">Total vendas por produto</th>
+        </tr>
+        <tr>
+          <th>Setor</th>
+          <th>Produto</th>
+          <th colspan="3">Quantidade de itens vendido</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="3">Farmácia</td>
+          <td>Esmalte</td>
+          <td>761</td>
+          <td>10</td>
+          <td>140</td>
+          <td>911</td>
+        </tr>
+
+        <tr>
+          <td>Creatina</td>
+          <td>30</td>
+          <td>100</td>
+          <td>200</td>
+          <td>330</td>
+        </tr>
+        
+        <tr>
+          <td>Shampoo</td>
+          <td>125</td>
+          <td>200</td>
+          <td>125</td>
+          <td>450</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+            <td colspan="2">Total vendas por mês</td>
+            <td>916</td>
+            <td>310</td>
+            <td>465</td>
+            <td>1691</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

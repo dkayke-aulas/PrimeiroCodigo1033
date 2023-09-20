@@ -1,0 +1,9 @@
+/* todo parágrafo IMEDIATAMENTE após uma div */
+/* div + p {
+    color: crimson;
+} */
+
+/* todo parágrafo após uma div */
+div ~ p {
+    color: darkmagenta;
+}

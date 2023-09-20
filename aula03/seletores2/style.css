@@ -1,0 +1,13 @@
+/* .coral-color {
+    color: coral;
+} */
+
+/* todo parágrafo dentro de uma div, em qualquer nível */
+/* div p {
+    color: coral;
+} */
+
+/* parágrafo sendo filho de uma div */
+div > p {
+    color: coral;
+}
