@@ -1,0 +1,76 @@
+body {
+    font-family: 'Comic Sans MS';
+}
+
+main {
+    scroll-behavior: smooth;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px;
+    height: 32px;
+    width: 80px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    margin:  4px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+li:hover {
+    border-color: rgb(220, 220, 47);
+    /* border-style: solid; */
+    background: white;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+/* pega o e LI se ele for o primeiro filho de uma UL que é filha de uma NAV */
+/* nav > ul > li:nth-child(1) {
+    background: rgb(220, 220, 47);
+} */
+
+/* pega o primeiro elemento do tipo LI que encontrar dentro de uma UL que é filha de uma NAV */
+nav > ul > li:nth-of-type(1) {
+    background: rgb(220, 220, 47);
+}
+
+nav > ul > li:nth-of-type(2) {
+    background: rgb(55, 134, 9);
+}
+nav > ul > li:nth-of-type(3) {
+    background: rgb(134, 191, 241);
+}
+nav > ul > li:nth-of-type(4) {
+    background: rgb(205, 26, 119);
+}
+
+img {
+    /* opacity: 0.5; */
+    filter: drop-shadow(2px 4px 6px black);
+    max-width: 100%;
+    border: 1px solid tomato;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+section {
+    margin: 10px;
+    column-count: 4;    
+    /* column-gap: 50px; */
+    /* column-rule: 2px solid purple; */
+}

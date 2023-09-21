@@ -1,0 +1,16 @@
+div {
+    background-color: rgb(0, 183, 183);
+    /* display: inline; */
+}
+
+span {
+    background-color: pink;
+    /* display: block; */
+}
+
+div, span {
+    display: inline-block;
+    margin: 3px;
+    height: 100px;
+    width: 80px;
+}
