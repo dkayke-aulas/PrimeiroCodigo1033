@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  height: 500vh;
+  width: 500vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* static */
+/* fixed */
+/* absolute */
+/* relative */
+/* styck */
+
+.box-1 {
+  position: sticky;
+  top: 0px;
+  left: 20px;
+  /* margin-top: 100px; */
+  width: 80px;
+  height: 80px;
+  background-color: blueviolet;
+}
+
+.box-2 {
+  position: static;
+  top: 50px;
+  left: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: springgreen;
+}
+
+.box-3 {
+  position: relative;
+  height: 900px;
+  background-color: brown;
+}

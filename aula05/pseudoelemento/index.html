@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      function changeTypeInput(imgElement) {
+        const divElement = imgElement.parentElement;
+        const inputElement = divElement.firstElementChild;
+
+        if (inputElement.type === 'text') {
+          imgElement.src = "https://www.svgrepo.com/show/431616/eye-close.svg";
+          inputElement.type = "password"
+        } else {
+          imgElement.src = "https://www.svgrepo.com/show/431615/eye-2.svg";
+          inputElement.type = "text"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="product-group">
+      <div class="product-card">
+        <div class="box-img">
+          <img src="https://source.unsplash.com/random/?banana" />
+        </div>
+        <div class="description">
+          <p class="promocao">Banana Nanica</p>
+          <p class="price">R$ 6,00</p>
+          <button>Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="box-img">
+          <img src="https://source.unsplash.com/random/?watermelon" />
+        </div>
+        <div class="description">
+          <p>Melancia docinha</p>
+          <p class="price">R$ 23,00</p>
+          <button>Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="box-img">
+          <img src="https://source.unsplash.com/random/?kiwi" />
+        </div>
+        <div class="description">
+          <p>Kiwi do agreste</p>
+          <p class="price">R$ 8,70</p>
+          <button>Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-container">
+      <input type="password" />
+      <img
+        role="button"
+        onclick="changeTypeInput(this)"
+        src="https://www.svgrepo.com/show/431616/eye-close.svg"
+      />
+    </div>
+    
+    <div class="input-container">
+      <input type="number" />
+    </div>
+  </body>
+</html>
