@@ -1,0 +1,53 @@
+@import url('./../style.global.css');
+
+body {
+    font-family: var(--fonte-primaria);
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav > ul > li {
+    padding: 8px;
+    background-color: var(--cor-primaria);
+    color: white;
+    cursor: pointer;
+}
+
+nav > ul > li:hover {
+    background-color: var(--cor-secundario);
+}
+
+/* 
+    vertical - portrait
+    horizontal - landscape
+*/
+@media screen and (max-width: 775px), (orientation: landscape) {
+    nav > ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav > ul > li {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 775px) and (max-width: 800px) {
+    nav > ul > li {
+        background-color: var(--cor-terciario);
+    }
+}
+
+@media print {
+    * {
+        background-color: transparent !important;
+        color: red !important;
+    }
+}
+
